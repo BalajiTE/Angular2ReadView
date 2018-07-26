@@ -1,0 +1,23 @@
+<div *ngIf="product" class="panel panel-info">
+    <div class="panel-heading">
+        <h4 class="panel-title">Product Details for <b>{{ product.Name }}</b> </h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-user-information">
+            <tbody>
+            <tr>
+                <th class="col-sm-3"><small>ID</small></th>
+                <td class="col-sm-9">{{product.ID}} </td>
+            </tr>
+            <tr>
+                <th class="col-sm-3"><small>Name</small></th>
+                <td class="col-sm-9">{{product.Name}}</td>
+            </tr>
+            <tr>
+                <th class="col-sm-3"><small>Description</small></th>
+                <td class="col-sm-9">{{product.Description}}</td>
+            </tr>                    
+            </tbody>
+        </table>
+    </div>
+</div>
