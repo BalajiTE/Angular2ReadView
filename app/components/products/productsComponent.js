@@ -53,7 +53,6 @@ var ProductComponent = /** @class */ (function () {
     ProductComponent.prototype.removeProduct = function (selectedProductId) {
         alert('Hello, Are you sure to Delete ' + selectedProductId);
     };
-    ;
     ProductComponent = __decorate([
         core_1.Component({
             selector: 'Products',

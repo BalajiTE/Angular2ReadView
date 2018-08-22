@@ -15,10 +15,17 @@ var ProductDetailsComponent = /** @class */ (function () {
     function ProductDetailsComponent() {
     }
     ProductDetailsComponent.prototype.ngOnInit = function () { };
+    ProductDetailsComponent.prototype.CloseProductDetailsView = function () {
+        this.product = null;
+    };
     __decorate([
         core_1.Input(),
         __metadata("design:type", Object)
     ], ProductDetailsComponent.prototype, "product", void 0);
+    __decorate([
+        core_1.Input(),
+        __metadata("design:type", String)
+    ], ProductDetailsComponent.prototype, "toggleShowHide", void 0);
     ProductDetailsComponent = __decorate([
         core_1.Component({
             selector: 'ProductDetails',

@@ -53,10 +53,10 @@ export class ProductComponent implements OnInit {
         this.pagedItems = this.products.slice(this.pager.startIndex, this.pager.endIndex + 1);
     }
 
-        // function to be called when user clicks on EDIT
-    ShowDetails(showProduct: Product) : void{
+     // function to be called when user clicks on EDIT
+     ShowDetails(showProduct: Product) : void{
         this.selectedProduct = showProduct;
-    }
+     }
 
      // function to be called when user clicks on EDIT
      editProduct(selectedProductId: number) : void{
@@ -66,5 +66,5 @@ export class ProductComponent implements OnInit {
      // function to be called when user clicks on DELETE
      removeProduct(selectedProductId: number) : void{
         alert('Hello, Are you sure to Delete ' + selectedProductId )
-    };
+     }
     }

@@ -9,9 +9,14 @@ import { Product } from '../../interfaces/products/product';
 
  export class ProductDetailsComponent implements OnInit { 
     @Input() product: Product;
+    @Input() public toggleShowHide: string;
 
-    constructor() {}
+    constructor() { }
 
-    ngOnInit() {}
+    ngOnInit() { }
+     
+    CloseProductDetailsView() {
+      this.product = null
+    }
 
   }
